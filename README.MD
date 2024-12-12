@@ -41,4 +41,3 @@ View:
 
 drawable/string: Todas as strings de Buttons e TextFields, ficaram aqui.
 
-
