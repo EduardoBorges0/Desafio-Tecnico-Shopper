@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c9540dc9d0f45c6d1a48a33efe38ac79c567ca4bfdac0513327da264745915fe
-size 422
+package com.app.testetcnicoshopper.Model.DTO.TripDTO
+
+import com.app.testetcnicoshopper.Model.entities.TripEntities.TripResponse
+
+data class ResponseTripDTO (
+    val success : Boolean
+)
+
+fun TripResponse.toDTO() : ResponseTripDTO{
+    return ResponseTripDTO(
+        success = this.success
+    )
+}
+fun TripResponse.toModel() : TripResponse{
+    return TripResponse(
+        success = this.success
+    )
+}
