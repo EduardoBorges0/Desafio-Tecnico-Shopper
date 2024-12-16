@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03cd0c31b71b93bf792984ebdfbcc14ce958cccc0b27c25a47407ad12a712364
-size 447
+package com.app.testetcnicoshopper.View.components
+
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import coil.compose.AsyncImage
+import com.app.testetcnicoshopper.R
+
+@Composable
+fun Background(){
+    AsyncImage(
+        model = R.drawable.background,
+        contentDescription = "background",
+        modifier = Modifier.fillMaxSize()
+
+    )
+}

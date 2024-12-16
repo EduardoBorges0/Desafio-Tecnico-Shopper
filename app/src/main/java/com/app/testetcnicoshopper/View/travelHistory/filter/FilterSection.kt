@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ba38d511bf501d2369e35caeb7accf92012dc2f22de1083172bc2d215577ae6
-size 972
+package com.app.testetcnicoshopper.View.travelHistory.filter
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import com.app.testetcnicoshopper.Model.DTO.TravelListDTO.RidesDTO
+import com.app.testetcnicoshopper.ViewModel.TravelViewModel.TravelListViewModel
+
+@Composable
+fun FilterSection(
+    filter: Boolean,
+    travelListViewModel: TravelListViewModel,
+    onFilterChange: (Boolean) -> Unit,
+    rides: List<RidesDTO>?
+) {
+    if (filter) {
+        Box(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            MethodsFilter(
+                modifier = Modifier.align(Alignment.TopCenter),
+                travelListViewModel = travelListViewModel,
+                onFilterChange = onFilterChange,
+                rides = rides
+            )
+        }
+    }
+}

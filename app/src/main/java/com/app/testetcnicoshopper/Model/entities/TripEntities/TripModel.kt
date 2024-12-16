@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e755159d25d7e5be4c2b6204ca1c2ebe164350a1bdac27dd8eab80216229673e
-size 354
+package com.app.testetcnicoshopper.Model.entities.TripEntities
+
+data class TripModel (
+    val customer_id : String,
+    val origin : String?,
+    val destination : String?,
+    val distance : Double,
+    val duration : String,
+    val driver : Driver,
+    val value : Double
+)
+
+data class Driver(
+    val id : Int,
+    val name : String
+)

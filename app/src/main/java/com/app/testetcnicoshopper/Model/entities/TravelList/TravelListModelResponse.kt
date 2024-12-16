@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:489c8db052fd2c4156948a5238f751ca84ce779916751048ae1d19eac322a850
-size 490
+package com.app.testetcnicoshopper.Model.entities.TravelList
+
+import java.util.Date
+
+data class TravelListModelResponse (
+   val customer_id : String,
+   val rides: List<Rides>
+)
+data class Rides(
+    val id: Int,
+    val date: Date,
+    val origin: String,
+    val destination: String,
+    val distance : Double,
+    val duration : String,
+    val driver: DriverTravelList,
+    val value: Double
+)
+
+data class DriverTravelList(
+    val id: Int,
+    val name: String
+)
