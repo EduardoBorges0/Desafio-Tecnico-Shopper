@@ -1,12 +1,3 @@
-package com.app.testetcnicoshopper.Model.Repositories.TripRepositories
-
-import com.app.testetcnicoshopper.Model.DTO.TripDTO.ResponseTripDTO
-import com.app.testetcnicoshopper.Model.DTO.TripDTO.TripDTO
-import com.app.testetcnicoshopper.Model.RetroFit.ConfirmTripAPI.ConfirmTripAPI
-import com.app.testetcnicoshopper.Model.entities.TripEntities.TripResponse
-
-class TripeRepositories(private val confirmTripAPI: ConfirmTripAPI) {
-    suspend fun tripRepositories(confirmTripModel: TripDTO) : ResponseTripDTO{
-        return confirmTripAPI.confirmTrip(confirmTripModel)
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fbdc35dfcec338c85d7481d1823931756c8c19135554771bc0f1addac6a5186a
+size 585
