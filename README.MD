@@ -1,3 +1,5 @@
+As fotos de cada tela estará no src/main/res/drawable.
+
 Esse aplicativo foi feito com o objetivo de aplicar meus conhecimentos para o Desafio Técnico da Shopper. Nesse aplicativo, usamos uma API feita pela Shopper com 3 endpoints:
 
 - POST para pesquisar se existem corridas disponíveis do endereço de origem para o endereço de destino.
@@ -18,7 +20,7 @@ Design Patterns e Arquitetura usadas no Projeto:
 - DTOs para proteção melhor dos dados no core.
 
 API Key:
-- A API key está localizada em xxx.
+- A API key do Google Cloud está localizada em local.properties.
 - Arquivos:
   - Model:
      - entities: Temos a pasta entities com todos os entities que precisamos para buscar dados na API e enviar dados.
@@ -36,5 +38,3 @@ View: Em View, temos algumas subpastas:
     - travelHistory: Aqui será o local para onde você irá após passar por todas as verificações de availableDrivers, aqui terá dois campos para preencher, com seu id e o id do motorista, aí o usuário preencherá os campos e, caso queira ver todos os motoristas no histórico, ele aperta em adicionar tudo, mas tem uma opção de filtrar o histórico. Nesse filtro, você poderá filtrar por nome do motorista, origem, destino e valor da viagem.
 
 drawable/string: Todas as strings de Buttons e TextFields ficaram aqui.
-
-As fotos de cada tela estará no src/main/res/drawable.
