@@ -37,4 +37,9 @@ View: Em View, temos algumas subpastas:
     - availableDrivers: Aqui ficará tudo que envolve a criação da segunda tela, que após passar por toda verificação da primeira página, ele virá para essa tela com os motoristas disponíveis e um mapa estático da sua rota.
     - travelHistory: Aqui será o local para onde você irá após passar por todas as verificações de availableDrivers, aqui terá dois campos para preencher, com seu id e o id do motorista, aí o usuário preencherá os campos e, caso queira ver todos os motoristas no histórico, ele aperta em adicionar tudo, mas tem uma opção de filtrar o histórico. Nesse filtro, você poderá filtrar por nome do motorista, origem, destino e valor da viagem.
 
+Testes: Na pasta de Unit Tests do Android também fiz testes unitários relacionados a cada um dos ViewModels.
+Ferramentas usadas:
+ - Mockito
+ - Mockk
+ - JUnit
 drawable/string: Todas as strings de Buttons e TextFields ficaram aqui.
